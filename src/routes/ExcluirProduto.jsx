@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
 import { ListaProdutos } from "../components/ListaProdutos";
-import classes from "./ExcluirProdutos.modules.css"
+import classes from "./ExcluirProduto.module.css"
 
 export default function ExcluirProduto() {
   document.title = "Excluir Produto";
@@ -13,7 +13,7 @@ export default function ExcluirProduto() {
     (item) => item.id == id
   );
 
-  const [produto, setProduto] = useState({
+  const [produto] = useState({
     id: produtoRecuperadoDaListaById[0].id,
     nome: produtoRecuperadoDaListaById[0].nome,
     desc: produtoRecuperadoDaListaById[0].desc,
