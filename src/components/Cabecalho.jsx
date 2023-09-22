@@ -6,7 +6,6 @@ export default function Cabecalho() {
     <>
       <header>
         <h1>Vite + React / Coded By - RM552244</h1>
-        <h1>Neves, o brabo!</h1>
         <ul>
           <li>
             <Link to="/">HOME - <H/></Link>
@@ -14,7 +13,9 @@ export default function Cabecalho() {
           <li>
             <Link to="/produtos">PRODUTOS</Link>
           </li>
-
+          <li>
+            <Link to="/cadastrar/produto">CADASTRAR PRODUTO</Link>
+          </li>
         </ul>
       </header>
     </>
